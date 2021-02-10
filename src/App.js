@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Вы на ветке develop. Здесь еще есть над чем поработать...
+          Вы на ветке develop. Добро пожаловать!
         </p>
         <p>
           Редактируйте <code>src/App.js</code> и сохраните для обновления.
