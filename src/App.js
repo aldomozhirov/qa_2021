@@ -1,5 +1,8 @@
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import {simpleCalculation} from './utils/utils';
+
 
 function App() {
   return (
@@ -7,10 +10,13 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Вы на ветке main. Этот код готов пойти в production!
+          Это ветка test-coverage.
         </p>
         <p>
-          Редактируйте <code>src/App.js</code> и сохраните для обновления.
+          Редактируйте <code>src/App.js</code> и сохраните для обновления!
+        </p>
+        <p>
+          Result of calculation is {simpleCalculation(10,4)}
         </p>
         <a
           className="App-link"
