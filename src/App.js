@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import {simpleCalculation} from './utils/utils';
+import {isNumberOddOrEven} from './utils/utils';
 
 
 function App() {
@@ -10,13 +10,13 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Это ветка test-coverage.
+          Это ветка test-coverage-task, которая поможет вам выполнить практическое задание.
         </p>
         <p>
           Редактируйте <code>src/App.js</code> и сохраните для обновления!
         </p>
         <p>
-          Result of calculation is {simpleCalculation(10,4)}
+          {isNumberOddOrEven(10,4)}
         </p>
         <a
           className="App-link"

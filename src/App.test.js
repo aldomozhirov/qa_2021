@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import App from './App';
-import {simpleCalculation, compareTwoNumbers} from '../src/utils/utils';
+import {simpleCalculation, compareTwoNumbers, isNumberOddOrEven} from '../src/utils/utils';
 
 test('renders learn react link', () => {
   const { getByText } = render(<App />);
@@ -27,4 +27,8 @@ it('compareTwoNumbers', () => {
   expect(compareTwoNumbers(0,-4)).toEqual(0);
   expect(compareTwoNumbers(5,-5)).toEqual(5);
   expect(compareTwoNumbers(-5,4)).toEqual(4);
+});
+it('isNumberOddOrEven', () => {
+  expect(isNumberOddOrEven(4,5)).toEqual('Произведение чисел 4 и 5 четно');
+  expect(isNumberOddOrEven(1,3)).toEqual('Произведение чисел 1 и 3 НЕ четно');
 });
